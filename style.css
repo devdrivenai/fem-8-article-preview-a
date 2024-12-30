@@ -179,6 +179,12 @@ main {
     display 0.5s ease-out allow-discrete;
 }
 
+.share-box a {
+  /* min 24 px for clickable elems per WAI */
+  /* https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html */
+  padding: 2px;
+}
+
 .share-box a img {
   display: block;
 }
