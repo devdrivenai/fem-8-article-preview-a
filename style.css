@@ -142,6 +142,12 @@ main {
 .share-box[open] {
   opacity: 1;
   transform: scaleX(1);
+  display: flex;
+
+  @starting-style {
+    opacity: 0;
+    transform: scaleX(0);
+  }
 }
 
 .share-box {
@@ -160,7 +166,6 @@ main {
   font-size: .75rem;
   font-weight: 500;
 
-  display: flex;
   align-items: center;
   gap: 1rem;
 
@@ -214,10 +219,15 @@ main {
   .share-box[open] {
     opacity: 1;
     transform: scaleX(1);
+    display: flex;
+  
+    @starting-style {
+      opacity: 0;
+      transform: scaleX(0);
+    }
   }
   
   .share-box {
-    display: flex;
     gap: 1rem;
   
     inset-inline: unset;
@@ -231,7 +241,6 @@ main {
   
     border-radius: 10px;
   
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.1rem;
