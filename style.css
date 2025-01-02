@@ -18,8 +18,6 @@ body {
   font-family: "Manrope", serif;
   font-size: .8125rem;
   font-weight: 500;
-
-  overflow: clip;
 }
 
 main {
@@ -189,7 +187,7 @@ main {
   display: block;
 }
 
-@container main (min-inline-size: 41rem) {
+@container main (min-inline-size: 57rem) {
   .preview-card {
     inline-size: min(88%, 45.5rem);
     grid-template-rows: 1fr;
